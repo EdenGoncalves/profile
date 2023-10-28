@@ -1,0 +1,238 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    font-size: 12px; 
+}
+
+
+nav {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    list-style: none;
+    padding: 10px;
+    color: #C378A0;
+}
+
+.nav-links li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin: 10px;
+    color: #C378A0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #C378A0;
+}
+
+.nav-links a:hover {
+    text-decoration: #AD84C3 underline wavy;
+}
+
+img {
+    width: 40%;
+    margin-left: 30%
+}
+
+
+.about {
+    margin: 10px;
+}
+
+#about-heading {
+    text-align: center;
+    color: #EE7A69;
+}
+p {
+    width: 100%;
+    text-align: left;
+    font-size: 10px
+}
+
+#projects-heading {
+    text-align: center;
+    color: #27AE60  ;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Three equal columns */
+    margin-bottom: 15px;
+    grid-gap: 20px;
+    /* Gap between grid items */
+}
+
+.grid-item {
+    font-size: 16px;
+    background-color: #A5C1E2;
+    border-radius: 50px;
+    height: 80px;
+    padding: 1em;
+    margin: 10px;
+    text-align: center;
+    line-height: 70px;
+}
+
+.social-icons {
+    padding: 1em;
+    text-align: center;
+}
+
+.social-icons a {
+    color: #5F81D8;
+    line-height: 30px;
+    font-size: 20px;
+    margin: 0 5px;
+    text-decoration: none;
+
+}
+
+.social-icons a i {
+    line-height: 30px;
+    font-size: 40px;
+    transition: all 200ms ease-in;
+    transform: scale(1);
+}
+
+.social-icons a:hover i {
+    z-index: 2;
+    transition: all 200ms ease-in;
+    transform: scale(1.5);
+}
+
+
+#contact {
+    text-align: center
+}
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+    color: black;
+}
+
+
+input[type=text] {
+    width: 80%;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    height: 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    position: relative;
+    background: transparent;
+    border: solid #9391DB 2px;
+    border-radius: 15px;
+    color: black;
+}
+
+input[type=email] {
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    position: relative;
+    background: transparent;
+    border: solid #9391DB 2px;
+    border-radius: 15px;
+    color: black;
+}
+
+textarea {
+    width: 80%;
+    margin-top: 45px;
+    height: 90px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    position: relative; 
+    background: transparent;
+    border: solid #9391DB 2px;
+    border-radius: 15px; 
+}
+
+input[type=submit] {
+    width: 80%;
+    height: 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    position: relative;
+    background-color: #7D44CE;
+    border: solid #7D44CE 2px;
+    border-radius: 15px;
+    color: white;
+}
+
+footer {
+    background-color: #E5B7A5; 
+}
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 10px; 
+    justify-content: space-between;
+}
+
+.footer-links li {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-between;
+}
+
+@media (min-width: 301px) {
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .grid-item {
+        font-size: 16px;
+        width: 95px;
+        background-color: #A5C1E2;
+        border-radius: 20px;
+        height: 80px;
+        padding: 1em;
+        margin: 10px;
+        text-align: center;
+        line-height: 70px;
+    }
+}
+
+@media (min-width: 351px) {
+
+    
+
+}
